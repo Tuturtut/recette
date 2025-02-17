@@ -6,6 +6,6 @@
     <title>Recipe.</title>
 </head>
 <body>
-  <h1>Recipe.</h1>  
+  <h1>Recipe.</h1>
 </body>
 </html>
