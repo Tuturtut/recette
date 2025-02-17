@@ -7,5 +7,8 @@
 </head>
 <body>
   <h1>Recipe.</h1>
+  <form action="insert.php" method="POST">
+    <input type="submit" value="Ajouter une recette">
+  </form>
 </body>
 </html>
