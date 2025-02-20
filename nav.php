@@ -1,4 +1,5 @@
 <?php include 'config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,5 +13,6 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="addReceipt.php">Ajouter une recette</a></li>
             <li><a href="showDB.php">Voir la base de donnée</a></li>
+            <li><a href="update.php">Changer la recette</a></li>
         </ul>
     </nav>
