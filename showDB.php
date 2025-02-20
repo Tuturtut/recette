@@ -1,6 +1,7 @@
 <?php 
 
 include 'config.php';
+include 'nav.php';
 
 $sql = "SELECT titre, instruction FROM recette";
 $stmt = $conn->query($sql);
@@ -15,7 +16,8 @@ echo "<table>
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     echo "
         <tr>
-            <td>".$row['titre'] . "<br> <br>".$row['instruction'];"<br>"."</td>
-        </tr>
-    </table>";
-}
+            <td>".$row['titre']."</td>
+            <td>".$row['instruction']."</td>
+        </tr>";
+    };
+    echo "</table>";
