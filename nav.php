@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav class="navigation">
         <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="addReceipt.php">Ajouter une recette</a></li>
-            <li><a href="showDB.php">Voir la base de donnée</a></li>
+            <li class="link"><a href="index.php">Accueil</a><span>Accueil</span></li>
+            <li class="link"><a href="addReceipt.php">Ajouter une recette</a></li>
+            <li class="link"><a href="showDB.php">Voir la base de donnée</a></li>
         </ul>
     </nav>
+    
+      <h1>Recipe.</h1>
