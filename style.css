@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Chillen";
+  src: url("ChillenRegular.woff2") format("woff2"), url("ChillenRegular.woff") format("woff"), url("ChillenRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background-color: #21445b;
   color: #5d8a66;
@@ -6,6 +13,10 @@ body {
   display: flex;
   margin: 0;
   gap: 20px;
+}
+
+.toSerif {
+  font-family: "Chillen";
 }
 
 a:visited {
@@ -63,8 +74,10 @@ a {
   width: 100%;
 }
 .navigation ul .link span {
-  position: absolute;
-  right: -1.01em;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 1.3em;
+  text-decoration: underline;
 }
 .navigation ul .link a {
   text-decoration: none;
