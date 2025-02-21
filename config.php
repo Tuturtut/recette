@@ -1,4 +1,4 @@
 <?php 
 
-$conn = new PDO('mysql:host=localhost; dbname=recipe', 'root', '');
+$conn = new PDO('mysql:host=localhost; dbname=recette', 'root', '');
 
