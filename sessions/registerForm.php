@@ -1,6 +1,4 @@
-<?php include '../config.php';
-include '../nav.php';
-?>
+<?php include '../header.php'; ?>
 
 <form action="register.php" method="post">
     <label for="username">Username: </label><input type="text" name="username" placeholder="mange tes morts">
@@ -8,3 +6,5 @@ include '../nav.php';
     <label for="password">Password: <input type="password" name="password"></label>
     <input type="submit" value="register">
 </form>
+
+<?php include '../footer.php'; ?>
