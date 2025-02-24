@@ -21,5 +21,4 @@ var_dump($_POST);
             echo "Erreur : " . $e->getMessage();
         }
     }
-    echo "nop";
 ?>

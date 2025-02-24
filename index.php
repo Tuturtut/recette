@@ -1,5 +1,8 @@
-<?php include 'nav.php'; ?>
-  <h1>Recipe.</h1>
-  <p>Retrouver les meilleurs recettes: ici <a href="showDB.php">Recette</a></p>
-</body>
+
+    <?php include 'nav.php'; ?>
+    <main>
+
+      <p>Retrouver les meilleurs recettes: ici <a href="showDB.php">Recette</a></p>
+    </main>
+  </body>
 </html>

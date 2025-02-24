@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'])){
 }
 ?>
 
-<h1>Mettre a jour la recette</h1>
+<h2>Mettre a jour la recette</h2>
 <form action="updating.php" method="POST">
     <input type="text" name="titre" placeholder="titre" value="<?php echo $recette['titre']; ?>">
     <input type="text" name="instruction" placeholder="instruction" value="<?php echo $recette['instruction']; ?>">
