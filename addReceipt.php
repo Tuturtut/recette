@@ -7,4 +7,5 @@ include 'header.php';
     <input type="text" name="instruction" placeholder="Instruction de la recette">
     <input type="submit" value="Ajouter une recette">
   </form>
+  <?php echo $_SESSION['id'];?>
 <?php include 'footer.php'; ?>

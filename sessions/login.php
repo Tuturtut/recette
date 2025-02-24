@@ -13,6 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if(password_verify($password, $sql['password'])){
             echo "bonjour " . $username;
             $_SESSION['login'] = $username;
+            $_SESSION['id'] = $sql['id'];
             header('Location:/recette/index.php');
         }else{
             echo "nop";
