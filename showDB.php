@@ -1,9 +1,8 @@
 <?php 
 
 include 'config.php';
-include 'nav.php';
+include 'header.php';
 
-?> <main> <?php
 
 $sql = "SELECT titre, instruction FROM recette";
 $stmt = $conn->query($sql);
@@ -24,6 +23,5 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     };
     echo "</table>";
 
+    include 'footer.php';
 ?>
-
-</main>
