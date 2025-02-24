@@ -1,13 +1,22 @@
-<?php 
+<?php include $_SERVER['DOCUMENT_ROOT'].'/recette/config.php';
+
+session_start();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if(isset($_POST['username']) && isset($_POST['password'])){
-        $username = $_POST['username'];
+    if(isset($_POST['login']) && isset($_POST['password'])){
+        $username = $_POST['login'];
         $password = $_POST['password'];
 
-        $sql = "SELECT * FROM utilisateur WHERE username = :username, password = :password";
-        $stmt->query($sql($username, $password));
+        $sql = $conn->query("SELECT * FROM utilisateur WHERE username = '".$_POST['login']."'");
+        $sql = $sql->fetch();
 
-        var_dump($username);
+        if(password_verify($password, $sql['password'])){
+            echo "bonjour " . $username;
+            $_SESSION['login'] = $username;
+            header('Location:/recette/index.php');
+        }else{
+            echo "nop";
+            header('Location:/recette/sessions/loginForm.php');
+        }
     }
 }
