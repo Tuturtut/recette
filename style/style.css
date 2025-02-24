@@ -47,23 +47,6 @@ a {
   margin-block: 0;
 }
 
-form {
-  display: flex;
-  height: fit-content;
-  flex-direction: column;
-}
-form input[type=text] {
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-bottom: #5d8a66 1px solid;
-  font-size: 1em;
-}
-form input[type=text]:focus {
-  color: #5d8a66;
-  outline: 1px solid #5d8a66;
-  border-radius: 2px;
-}
-
 .navigation {
   flex-direction: column;
   background-color: #5d8a66;
@@ -99,6 +82,51 @@ form input[type=text]:focus {
 .navigation ul .link a {
   text-decoration: none;
   color: #21445b;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main #title {
+  position: absolute;
+  left: 0;
+}
+main .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+main .content h2 {
+  font-size: 2.5em;
+}
+main .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .content form input[type=submit] {
+  background-color: #5d8a66;
+  border: 0;
+  color: #21445b;
+  height: 2em;
+  font-size: 1.2em;
+}
+main .content form input[type=text] {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: #5d8a66 1px solid;
+  font-size: 1.3em;
+}
+main .content form input[type=text]:focus {
+  color: #5d8a66;
+  outline: 1px solid #5d8a66;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
