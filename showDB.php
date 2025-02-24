@@ -3,6 +3,8 @@
 include 'config.php';
 include 'nav.php';
 
+?> <main> <?php
+
 $sql = "SELECT titre, instruction FROM recette";
 $stmt = $conn->query($sql);
 $stmt->execute();
@@ -21,3 +23,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         </tr>";
     };
     echo "</table>";
+
+?>
+
+</main>
