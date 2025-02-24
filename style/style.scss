@@ -97,26 +97,39 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  #title {
-    position: absolute;
-    left: 0;
-  }
+
   .content {
-    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5%;
+    width: 100%;
+
+    table {
+      width: 60%;
+      border-spacing: 0;
+      th {
+        font-family: "Chillen";
+        font-size: 2em;
+        color: #21445b;
+        background-color: #5d8a66;
+        text-decoration: underline;
+      }
+      td {
+        border: #5d8a66 3px solid;
+        padding: 2%;
+      }
+    }
 
     h2 {
-      font-size: 2.5em;
+      font-size: 3em;
     }
 
     form {
       display: flex;
       flex-direction: column;
-      gap: 1em;
+      gap: 3em;
 
       input[type="submit"] {
         background-color: #5d8a66;
@@ -127,16 +140,25 @@ main {
         cursor: pointer;
       }
       input[type="text"] {
+        color: #5d8a66;
         background-color: transparent;
         border: 1px solid transparent;
         border-bottom: #5d8a66 1px solid;
-        font-size: 1.3em;
+        font-size: 1.8em;
 
         &:focus {
           color: #5d8a66;
           outline: 1px solid #5d8a66;
           border-radius: 2px;
         }
+      }
+      input[type="submit"] {
+        background-color: #5d8a66;
+        border: 0;
+        color: #21445b;
+        height: 2em;
+        font-size: 1.5em;
+        cursor: pointer;
       }
     }
   }
