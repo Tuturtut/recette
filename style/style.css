@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Chillen";
+  src: url("ChillenRegular.woff2") format("woff2"), url("ChillenRegular.woff") format("woff"), url("ChillenRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #21445b;
+  color: #5d8a66;
+  font-size: 20px;
+  font-family: "Host Grotesk";
+  display: flex;
+  margin: 0;
+  gap: 20px;
+}
+
+.toSerif {
+  font-family: "Chillen";
+}
+
+a:visited {
+  color: #5d8a66;
+}
+
+h1 {
+  font-size: 8em;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  margin-block: 0;
+}
+
+.navigation {
+  flex-direction: column;
+  background-color: #5d8a66;
+  height: 100vh;
+  width: 5%;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline-start: 0;
+  justify-content: space-around;
+  height: 100%;
+}
+.navigation ul .link {
+  writing-mode: sideways-lr;
+  font-weight: 800;
+  color: #21445b;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.navigation ul .link span {
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+.navigation ul .link a {
+  text-decoration: none;
+  color: #21445b;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main #title {
+  position: absolute;
+  left: 0;
+}
+main .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+main .content h2 {
+  font-size: 2.5em;
+}
+main .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .content form input[type=submit] {
+  background-color: #5d8a66;
+  border: 0;
+  color: #21445b;
+  height: 2em;
+  font-size: 1.2em;
+}
+main .content form input[type=text] {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: #5d8a66 1px solid;
+  font-size: 1.3em;
+}
+main .content form input[type=text]:focus {
+  color: #5d8a66;
+  outline: 1px solid #5d8a66;
+  border-radius: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

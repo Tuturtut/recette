@@ -24,4 +24,3 @@ session_start();?>
         </ul>
     </nav>
     
-      <h1>Recipe.</h1>
