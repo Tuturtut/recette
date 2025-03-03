@@ -20,7 +20,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
             <td>".$row['titre']."</td>
             <td>".$row['instruction']."</td>
             <td>".$row['username']."</td>
-            <td><img src='" .$row['image']. "'></td>";
+            <td><img src='" .$row['image']. "' class='imageRecette'></td>";
     if($_SESSION['login'] === $row['username']){
         $output .= "<td><form action='update.php' method='POST'>
         <input type='hidden' name='id' value='".$row['id_recette']."'>

@@ -129,5 +129,12 @@ main .content form input[type=text]:focus {
   outline: 1px solid #5d8a66;
   border-radius: 2px;
 }
+main table {
+  background-color: yellow;
+}
+main table img {
+  max-width: 200px;
+  max-height: 200px;
+}
 
 /*# sourceMappingURL=style.css.map */
