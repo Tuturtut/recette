@@ -1,15 +1,14 @@
-<?php include 'nav.php'; 
+<?php include 'header.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'])){
     $id = $_POST['id'];
+    echo $_POST['id'];
 
     $sql = "SELECT * FROM recette WHERE id = $id";
     $stmt = $conn->query($sql);
     $stmt->execute();
 
     $recette = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    var_dump($recette);
 }
 ?>
 

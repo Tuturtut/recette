@@ -1,5 +1,5 @@
 <?php 
-include 'nav.php';
+include 'header.php';
 var_dump($_SERVER['REQUEST_METHOD']);
 var_dump($_POST);
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['titre']) && isset($_POST['instruction']) && isset($_POST['id'])) {

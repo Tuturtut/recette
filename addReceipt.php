@@ -5,6 +5,7 @@ include 'header.php';
   <form action="insert.php" method="POST">
     <input type="text" name="titre" placeholder="Titre de la recette">
     <input type="text" name="instruction" placeholder="Instruction de la recette">
+    <input type="text" name="URL_image" placeholder="Entrer l'URL ici ">
     <input type="submit" value="Ajouter une recette">
   </form>
 <?php include 'footer.php'; ?>

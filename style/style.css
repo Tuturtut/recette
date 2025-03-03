@@ -149,5 +149,9 @@ main .content form input[type=submit] {
   font-size: 1.5em;
   cursor: pointer;
 }
+main table img {
+  max-width: 200px;
+  max-height: 200px;
+}
 
 /*# sourceMappingURL=style.css.map */
