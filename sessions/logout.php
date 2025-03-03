@@ -6,6 +6,7 @@ $_SESSION['login'] = "";
 $_SESSION['password'] = "";
 session_destroy();
 
+header('Location:/recette/index.php');
 ?>
 
 <a href="/recette/index.php">test</a>
